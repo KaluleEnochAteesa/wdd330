@@ -1,0 +1,20 @@
+{
+  "name": "wdd330",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/fba0cfd5-e55d-4223-936a-8f0ec6178f20/deploy-status)](https://app.netlify.com/projects/titan-tactics/deploys)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaluleEnochAteesa/wdd330.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaluleEnochAteesa/wdd330/issues"
+  },
+  "homepage": "https://github.com/KaluleEnochAteesa/wdd330#readme"
+}
