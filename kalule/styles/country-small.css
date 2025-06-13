@@ -1,0 +1,63 @@
+
+:root {
+    --primary-color: #005a9c;
+    --secondary-color: #ffffff;
+    --width: 100%;
+}
+
+
+
+body {
+    font-family: 'Comfortaa', 'Ubuntu', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+header {
+    font-family: 'Ubuntu','Comfortaa',  Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+#image {
+    text-align: center;
+}
+
+#image img {
+    width: var(--width);
+    height: auto;
+}
+
+#data, #weather {
+    background-color: rgba(58, 90, 206, 0.27);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.weather-icon {
+    display: none;
+}
+
+.weather-image {
+    display: block;
+    width: var(--width);
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1em 0;
+}

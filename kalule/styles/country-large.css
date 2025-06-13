@@ -1,0 +1,52 @@
+
+:root {
+    --pixels: 10px;
+    --width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image {
+        position: relative;
+        width: var(--width);
+    }
+
+    #data, #weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1em;
+        border-radius: 8px;
+    }
+
+    #data {
+        top: var(--pixels);
+        left: var(--pixels);
+    }
+
+    #weather {
+        bottom: var(--pixels);
+        right: var(--pixels);
+    }
+
+    .weather-icon {
+        display: inline-block;
+    }
+
+    .weather-image {
+        display: none;
+    }
+
+    #weather .weather-icon::after {
+        content: "⛅";
+        font-size: 2em;
+        display: block;
+        text-align: center;
+    }
+}
+

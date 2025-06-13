@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - KALULE ENOCH ATEESA. My personal dream universe to reside,in the realm of planet earth">
+    <meta name="author" content="KALULE ENOCH ATEESA">
+    <title>WDD 131 - Dynamic Web Fundamentals - KALULE ENOCH ATEESA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/country-small.css">
+    <link rel="stylesheet" href="styles/country-large.css">
+    <script src="scripts/country.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mykonos</h1>
+    </header>
+    <main>
+        <section id="image">
+            <picture>
+                <source srcset="images/mykonosbay.webp" media="(min-width: 768px)">
+                <img src="images/mykonosnights.webp" alt="Mykonos">
+            </picture>
+            <section id="data">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 85.5 km²</li>
+                    <li>Population: 10,134</li>
+                    <li>Capital: Mykonos Town</li>
+                    <li>Languages: Greek</li>
+                    <li>Currency: Euro (€)</li>
+                    <li>Time Zone: UTC+2</li>
+                    <li>Calling Code: +30</li>
+                    <li>Internet TLD: .gr</li>
+                </ul>
+            </section>
+            <section id="weather">
+                <h2>Weather <span class="weather-icon"></span></h2>
+                <img src="images/sunny.svg" alt="Weather Icon" class="weather-image">
+                <p>Temperature: 25°C</p>
+                <p>Conditions: Sunny</p>
+                <p>Wind: 15 km/h</p>
+                <p>Wind Chill: <span id="windchill">N/A</span></p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 KALULE ENOCH ATEESA @ Mykonos</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
+
+
