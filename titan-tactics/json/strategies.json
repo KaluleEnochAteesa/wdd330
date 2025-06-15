@@ -5,23 +5,43 @@
     "description": "Own every part of your supply chain—from raw materials to distribution—to eliminate middlemen.",
     "category": "Infrastructure Control",
     "use_case": "Oil refining, manufacturing, food distribution",
-    "tags": ["efficiency", "supply chain", "monopoly"]
+    "tags": ["efficiency", "supply chain", "monopoly"],
+    "executionSteps": [
+      "Map your current supply chain",
+      "Identify which parts you don't yet control",
+      "Acquire or develop in-house alternatives for those parts",
+      "Optimize for cost savings and reliability",
+      "Integrate all operations under one brand or holding company"
+    ]
   },
   {
     "id": 2,
     "name": "Predatory Pricing",
-    "description": "Lower your prices until competitors fold. Then acquire them, and raise prices after market dominance.",
+    "description": "Lower your prices to undercut competitors, drive them out, then consolidate and increase prices after dominance.",
     "category": "Competitive Elimination",
-    "use_case": "Retail, logistics, digital services",
-    "tags": ["price war", "aggression", "scaling"]
+    "use_case": "Retail, transportation, digital services",
+    "tags": ["price war", "acquisition", "scaling"],
+    "executionSteps": [
+      "Analyze competitor pricing models",
+      "Cut prices below profitability threshold—sustain with war chest",
+      "Monitor which competitors fold or seek buyout",
+      "Acquire or absorb them at minimal cost",
+      "Gradually reset pricing after market control is secured"
+    ]
   },
   {
     "id": 3,
     "name": "Acquisition Expansion",
-    "description": "Buy out fragmented competitors to consolidate power and control pricing.",
+    "description": "Buy out fragmented competitors to consolidate power and centralize pricing decisions.",
     "category": "Market Consolidation",
     "use_case": "SaaS tools, agri-processing, fintech",
-    "tags": ["mergers", "buyouts", "growth"]
+    "tags": ["mergers", "buyouts", "expansion"],
+    "executionSteps": [
+      "Create a map of the fragmented market players",
+      "Identify weak or underperforming competitors",
+      "Approach with acquisition offers or leverage debt positions",
+      "Absorb assets, teams, or customers into a unified system",
+      "Streamline operations under single governance and branding"
+    ]
   }
 ]
- 
