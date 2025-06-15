@@ -95,3 +95,45 @@ select {
   margin-top: 10px;
   border-radius: 5px;
 }
+/* Core layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  background-color: #1C1C1C;
+}
+
+/* Shared module styles */
+.module-card {
+  background-color: #0A1F44;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Section headings */
+.module-card h2, .module-card h3 {
+  color: #D4AF37;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Typography */
+body {
+  font-family: 'Merriweather', serif;
+  color: #FFFFFF;
+  background: #1C1C1C;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .module-card {
+    padding: 15px;
+  }
+}
