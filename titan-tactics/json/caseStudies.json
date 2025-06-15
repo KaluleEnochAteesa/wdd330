@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "The South Improvement Company Deal",
+    "summary": "Rockefeller negotiated secret rebates with railroads to undercut competition and standardize oil shipments.",
+    "tactic": "Vertical Integration",
+    "lesson": "Control logistics infrastructure early to force smaller competitors into dependency."
+  },
+  {
+    "id": 2,
+    "title": "The Cleveland Massacre (1872)",
+    "summary": "He bought out 22 of 26 competing oil refineries in Cleveland in less than two months.",
+    "tactic": "Acquisition Expansion",
+    "lesson": "Strike fast and dominate fragmented markets with capital and leverage."
+  },
+  {
+    "id": 3,
+    "title": "Rebates & Kickbacks Strategy",
+    "summary": "Rockefeller secured exclusive shipping rates and forced carriers to pay him for shipments by his competitors.",
+    "tactic": "Predatory Pricing",
+    "lesson": "Turn your scale into pressure—make competitors cost you less by design."
+  }
+]

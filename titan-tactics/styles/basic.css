@@ -54,3 +54,17 @@ select {
   margin-top: 20px;
   text-align: left;
 }
+.case-study-card {
+  background: #0A1F44;
+  color: white;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+  border-left: 5px solid #D4AF37;
+  border-radius: 8px;
+}
+
+.case-study-card h3 {
+  color: #D4AF37;
+  margin-bottom: 10px;
+}
