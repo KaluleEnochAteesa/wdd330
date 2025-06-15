@@ -17,3 +17,40 @@ section {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
+.strategy-card {
+  background-color: #0A1F44;
+  color: white;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.strategy-card h3 {
+  color: #D4AF37;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.strategy-card p {
+  font-family: 'Merriweather', serif;
+}
+#analysis-tool {
+  background-color: #1C1C1C;
+  color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+select {
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'Merriweather', serif;
+}
+
+#strategy-steps {
+  margin-top: 20px;
+  text-align: left;
+}

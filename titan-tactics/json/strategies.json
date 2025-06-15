@@ -1,14 +1,27 @@
 [
-    {
-        "name": "Vertical Integration",
-        "description": "Owning every step of the supply chain to maximize efficiency and control."
-    },
-    {
-        "name": "Price Wars",
-        "description": "Driving prices low to force competitors out of business, then raising them once market dominance is secured."
-    },
-    {
-        "name": "Acquisition Strategy",
-        "description": "Buying out smaller competitors to eliminate industry fragmentation."
-    }
+  {
+    "id": 1,
+    "name": "Vertical Integration",
+    "description": "Own every part of your supply chain—from raw materials to distribution—to eliminate middlemen.",
+    "category": "Infrastructure Control",
+    "use_case": "Oil refining, manufacturing, food distribution",
+    "tags": ["efficiency", "supply chain", "monopoly"]
+  },
+  {
+    "id": 2,
+    "name": "Predatory Pricing",
+    "description": "Lower your prices until competitors fold. Then acquire them, and raise prices after market dominance.",
+    "category": "Competitive Elimination",
+    "use_case": "Retail, logistics, digital services",
+    "tags": ["price war", "aggression", "scaling"]
+  },
+  {
+    "id": 3,
+    "name": "Acquisition Expansion",
+    "description": "Buy out fragmented competitors to consolidate power and control pricing.",
+    "category": "Market Consolidation",
+    "use_case": "SaaS tools, agri-processing, fintech",
+    "tags": ["mergers", "buyouts", "growth"]
+  }
 ]
+ 
