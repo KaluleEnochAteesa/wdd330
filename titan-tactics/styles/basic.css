@@ -68,3 +68,30 @@ select {
   color: #D4AF37;
   margin-bottom: 10px;
 }
+#downloads {
+  background-color: #0A1F44;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+#downloads h2 {
+  color: #D4AF37;
+}
+
+#downloads label {
+  font-weight: bold;
+}
+
+#downloads button {
+  padding: 10px;
+  background-color: #D4AF37;
+  border: none;
+  color: #0A1F44;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
