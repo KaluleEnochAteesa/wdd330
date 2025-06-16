@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan Tactics</title>
     <link rel="stylesheet" href="styles/basic.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </head>
 <body>
     <header class="hero">
@@ -18,6 +20,11 @@
             <li><a href="#downloads">Decision Guide</a></li>
         </ul>
      </nav>
+        <label class="toggle-switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span>
+        </label>
+
     </header>
 
     <main>
@@ -41,7 +48,11 @@
                     <li><a href="templates/vertical-integration-plan.pdf" target="_blank">Vertical Integration Planner</a></li>
                 </ul>
            </div>
-
+           <div id="custom-pdf">
+              <h3>📝 Generate My Strategy Brief</h3>
+              <textarea id="pdf-notes" placeholder="Summarize your Rockefeller strategy here..."></textarea>
+              <button id="generate-pdf">Download PDF</button>
+            </div>
         </section>
     </main>
 
