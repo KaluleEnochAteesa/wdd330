@@ -23,9 +23,35 @@
     <main>
         <section id="strategy-list"></section>
         <section id="analysis-tool"></section>
-        <section id="discussion-hub"></section>
-        <section id="downloads"></section>
+        <section id="discussion-hub" class="module-card">
+            <h2>🧠 Discussion Hub</h2>
+            <div id="comment-list"></div>
+            <form id="comment-form">
+                <input type="text" id="comment-input" placeholder="Drop a strategy insight..." required />
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <section id="downloads">
+            <div id="download-tools">
+              <h3>📦 Downloadable Strategy Templates</h3>
+                <ul>
+                    <li><a href="templates/fragmentation-analysis.pdf" target="_blank">Fragmentation Analysis Worksheet</a></li>
+                    <li><a href="templates/acquisition-scouting.pdf" target="_blank">Acquisition Scouting Checklist</a></li>
+                    <li><a href="templates/vertical-integration-plan.pdf" target="_blank">Vertical Integration Planner</a></li>
+                </ul>
+           </div>
+
+        </section>
     </main>
+
+    <footer class="titan-footer">
+       <p>“The way to make money is to buy when blood is running in the streets.”</p>
+       <span>— John D. Rockefeller</span>
+       <hr />
+       <p class="footer-credit">Built with strategy and resilience by Enoch A. Kalule © Titan Tactics 2025</p>
+    </footer>
+
     <script type="module" src="scripts/app.mjs"></script>
 </body>
 </html>

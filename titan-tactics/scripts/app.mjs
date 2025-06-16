@@ -23,9 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.add("module-card");
         setTimeout(() => {
           section.classList.add("show");
-        }, index * 150);
+        }, index * 600);
       }
     });
   }, 200);
 });
+import { renderDiscussionHub } from "./discussionHub.mjs";
+renderDiscussionHub(); // Add this after the others
 
