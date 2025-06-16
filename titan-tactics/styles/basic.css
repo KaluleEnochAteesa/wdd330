@@ -417,3 +417,28 @@ html {
   border-radius: 5px;
   cursor: pointer;
 }
+#scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 16px;
+  background-color: #d4af3744;
+  color: #0A1F44;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 1000;
+}
+
+#scroll-top:hover {
+  background-color: #fff;
+  color: #0A1F44;
+}
+
+#scroll-top.show {
+  opacity: 1;
+}

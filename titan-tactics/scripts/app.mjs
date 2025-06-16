@@ -30,4 +30,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 import { renderDiscussionHub } from "./discussionHub.mjs";
 renderDiscussionHub(); // Add this after the others
+// Back to Top button behavior
+window.addEventListener("scroll", () => {
+  const scrollBtn = document.getElementById("scroll-top");
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+document.getElementById("scroll-top").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
