@@ -17,3 +17,7 @@ function calculateEdge() {
         resultText.innerText = "Consider acquisition strategies for stronger control.";
     }
 }
+const section = document.getElementById("strategy-list");
+if (section) {
+    section.classList.add("module-card", "show");
+}

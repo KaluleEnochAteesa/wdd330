@@ -1,22 +1,24 @@
+/* Reformatted CSS with proper indentation */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
 header {
-    background: #222;
-    color: white;
-    padding: 20px;
+  background: #222;
+  color: white;
+  padding: 20px;
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
+
 .strategy-card {
   background-color: #0A1F44;
   color: white;
@@ -35,6 +37,7 @@ section {
 .strategy-card p {
   font-family: 'Merriweather', serif;
 }
+
 #analysis-tool {
   background-color: #1C1C1C;
   color: #fff;
@@ -54,6 +57,7 @@ select {
   margin-top: 20px;
   text-align: left;
 }
+
 .case-study-card {
   background: #0A1F44;
   color: white;
@@ -68,6 +72,7 @@ select {
   color: #D4AF37;
   margin-bottom: 10px;
 }
+
 #downloads {
   background-color: #0A1F44;
   color: white;
@@ -95,6 +100,7 @@ select {
   margin-top: 10px;
   border-radius: 5px;
 }
+
 /* Core layout */
 .grid-layout {
   display: grid;
@@ -114,7 +120,8 @@ select {
 }
 
 /* Section headings */
-.module-card h2, .module-card h3 {
+.module-card h2,
+.module-card h3 {
   color: #D4AF37;
   font-family: 'Montserrat', sans-serif;
 }
@@ -132,11 +139,11 @@ body {
     grid-template-columns: 1fr;
     padding: 20px;
   }
-
   .module-card {
     padding: 15px;
   }
 }
+
 /* Hero Banner */
 .hero {
   background: linear-gradient(145deg, #0A1F44, #1C1C1C);
@@ -195,9 +202,11 @@ body {
     align-items: center;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .module-card {
   opacity: 0;
   transform: translateY(40px);
@@ -214,15 +223,41 @@ html {
 .module-card:nth-of-type(1) {
   animation-delay: 0.2s;
 }
+
 .module-card:nth-of-type(2) {
   animation-delay: 0.4s;
 }
+
 .module-card:nth-of-type(3) {
   animation-delay: 0.6s;
 }
+
 .module-card:nth-of-type(4) {
   animation-delay: 0.8s;
 }
+
 .module-card {
   border-top: 3px solid #D4AF37;
+}
+/* Combined .module-card styles for animation and appearance */
+.module-card {
+  background-color: #0A1F44;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+  border-top: 3px solid #D4AF37;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+.module-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.module-card.show {
+  opacity: 1;
+  transform: translateY(0px);
 }

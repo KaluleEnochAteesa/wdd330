@@ -14,3 +14,7 @@ function downloadTemplate() {
     link.click();
     document.body.removeChild(link);
 }
+const section = document.getElementById("strategy-list");
+if (section) {
+    section.classList.add("module-card", "show");
+}

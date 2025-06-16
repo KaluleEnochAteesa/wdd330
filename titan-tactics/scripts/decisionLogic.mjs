@@ -58,3 +58,7 @@ export async function renderDecisionGuide() {
       : `<p>No strategy match found. Consider reassessing your business readiness.</p>`;
   });
 }
+const section = document.getElementById("strategy-list");
+if (section) {
+  section.classList.add("module-card", "show");
+}

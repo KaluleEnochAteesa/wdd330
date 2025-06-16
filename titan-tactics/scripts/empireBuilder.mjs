@@ -25,3 +25,7 @@ export async function renderEmpireBuilder() {
     `;
   });
 }
+const section = document.getElementById("strategy-list");
+if (section) {
+  section.classList.add("module-card", "show");
+}

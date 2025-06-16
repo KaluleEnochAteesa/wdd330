@@ -9,3 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCaseStudyHub();
   renderDecisionGuide(); // Already visible on your page
 });
+/**
+ * Update rendered sections with styling classes after rendering.
+ * Assumes each module renders into a section with a known ID.
+ */
+const sectionIds = [
+  "strategy-list",
+  "empire-builder",
+  "case-study-hub",
+  "decision-guide"
+];
+
+sectionIds.forEach(id => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.classList.add("module-card", "show");
+  }
+});

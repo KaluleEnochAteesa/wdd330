@@ -21,3 +21,5 @@ export async function renderStrategyArchive() {
     container.appendChild(block);
   });
 }
+const section = document.getElementById("strategy-list");
+section.classList.add("module-card", "show");

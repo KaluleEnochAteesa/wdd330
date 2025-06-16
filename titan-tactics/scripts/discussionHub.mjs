@@ -16,3 +16,7 @@ function postComment() {
     commentsDiv.appendChild(newComment);
     commentBox.value = "";
 }
+const section = document.getElementById("strategy-list");
+if (section) {
+    section.classList.add("module-card", "show");
+}

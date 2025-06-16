@@ -24,3 +24,7 @@ export async function renderCaseStudyHub() {
     console.error("Case Study Error:", error);
   }
 }
+const section = document.getElementById("strategy-list");
+if (section) {
+  section.classList.add("module-card", "show");
+}

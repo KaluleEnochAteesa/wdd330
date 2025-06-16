@@ -7,3 +7,9 @@ export async function fetchStrategies() {
         return [];
     }
 }
+export function showStrategySection() {
+    const section = document.getElementById("strategy-list");
+    if (section) {
+        section.classList.add("module-card", "show");
+    }
+}
