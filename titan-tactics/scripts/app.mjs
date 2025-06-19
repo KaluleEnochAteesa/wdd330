@@ -2,12 +2,14 @@ import { renderStrategyArchive } from "./strategyRenderer.mjs";
 import { renderEmpireBuilder } from "./empireBuilder.mjs";
 import { renderCaseStudyHub } from "./caseStudies.mjs";
 import { renderDecisionGuide } from "./decisionLogic.mjs"; // This one’s working ✅
+import { renderDiscussionHub } from "./discussionHub.mjs";
 
 document.addEventListener("DOMContentLoaded", () => {
   renderStrategyArchive();
   renderEmpireBuilder();
   renderCaseStudyHub();
   renderDecisionGuide();
+  renderDiscussionHub(); // Add this after the others
 
   setTimeout(() => {
     const sectionIds = [
@@ -28,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, 200);
 });
-import { renderDiscussionHub } from "./discussionHub.mjs";
-renderDiscussionHub(); // Add this after the others
+
+
 // Back to Top button behavior
 window.addEventListener("scroll", () => {
   const scrollBtn = document.getElementById("scroll-top");
@@ -81,4 +83,78 @@ document.getElementById("generate-pdf").addEventListener("click", async () => {
 
   doc.save("titan-strategy-brief.pdf");
 });
+window.addEventListener("load", () => {
+  const loader = document.getElementById("titan-loader");
+  setTimeout(() => loader.style.display = "none", 1200);
+});
 
+document.getElementById("get-strategy").addEventListener("click", () => {
+  const q1 = document.getElementById("q1").value;
+  const q2 = document.getElementById("q2").value;
+  const q3 = document.getElementById("q3").value;
+  const output = document.getElementById("strategy-result");
+
+  if ([q1, q2, q3].includes("--")) {
+    output.innerHTML = "📌 Please answer all questions to get a strategy.";
+    return;
+  }
+
+  if (q1 === "yes" && q2 === "yes" && q3 === "yes") {
+    output.innerHTML = `<h3>💼 Vertical Integration + Acquisition Expansion</h3>
+    <p>Consolidate fragmented markets while locking down supply chains to scale like Rockefeller in Cleveland 1872.</p>`;
+  } else if (q1 === "yes" && q3 === "yes") {
+    output.innerHTML = `<h3>💣 Predatory Pricing</h3>
+    <p>Use your capital to undercut competitors and buy them out when they fold.</p>`;
+  } else {
+    output.innerHTML = `<h3>🛠️ Operational Efficiency</h3>
+    <p>Focus on logistics optimization, partnerships, and compounding control before going full conquest mode.</p>`;
+  }
+});
+// Track strategy deployment
+let strategyCount = 0;
+let briefCount = 0;
+let downloadCount = 0;
+
+document.getElementById("get-strategy").addEventListener("click", () => {
+  strategyCount++;
+  document.getElementById("stat-strategies").textContent = strategyCount;
+});
+
+document.getElementById("generate-pdf").addEventListener("click", () => {
+  briefCount++;
+  document.getElementById("stat-pdfs").textContent = briefCount;
+});
+
+// Fake download buttons listener (if you link to real .pdfs)
+document.querySelectorAll("#download-tools a").forEach(link => {
+  link.addEventListener("click", () => {
+    downloadCount++;
+    document.getElementById("stat-downloads").textContent = downloadCount;
+  });
+});
+document.getElementById("wikidata-btn").addEventListener("click", () => {
+  const query = document.getElementById("wikidata-query").value.trim();
+  const resultBox = document.getElementById("wikidata-result");
+
+  if (!query) {
+    resultBox.innerHTML = "Please enter a search term.";
+    return;
+  }
+
+  const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(query)}&language=en&format=json&origin=*`;
+
+  fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      if (data.search && data.search.length > 0) {
+        const item = data.search[0];
+        resultBox.innerHTML = `<strong>${item.label}</strong><br>${item.description || "No description available."}<br><a href="https://www.wikidata.org/wiki/${item.id}" target="_blank">View on Wikidata</a>`;
+      } else {
+        resultBox.innerHTML = "No results found.";
+      }
+    })
+    .catch(err => {
+      resultBox.innerHTML = "Error fetching data.";
+      console.error(err);
+    });
+});

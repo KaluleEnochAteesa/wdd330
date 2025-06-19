@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan Access Portal</title>
+  <link rel="stylesheet" href="styles/basic.css" />
+</head>
+<body>
+  <section class="login-container">
+    <h1>👑 Titan Access Portal</h1>
+    <form id="login-form">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Enter Empire</button>
+    </form>
+    <p class="login-footer">Demo only • Built by Enoch A. Kalule © Titan Tactics</p>
+  </section>
+
+  <script>
+    document.getElementById("login-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Access Granted. Redirecting to Titan Tactics...");
+      window.location.href = "titan-tactics.html";
+    });
+  </script>
+</body>
+</html>

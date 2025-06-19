@@ -6,10 +6,18 @@
     <title>Titan Tactics</title>
     <link rel="stylesheet" href="styles/basic.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
 </head>
 <body>
+    <div id="titan-loader">
+        <div class="spinner"></div>
+        <p>Calibrating Consolidation Tactics...</p>
+    </div>
+
     <header class="hero">
+     <img src="images/titan-tactics-logo.webp" alt="Titan Tactics Logo" class="titan-logo" />
+   
      <h1>Titan Tactics</h1>
      <p class="tagline">Master the Moves. Build the Empire.</p>
      <nav class="navbar">
@@ -18,6 +26,8 @@
             <li><a href="#analysis-tool">Empire Builder</a></li>
             <li><a href="#discussion-hub">Case Studies</a></li>
             <li><a href="#downloads">Decision Guide</a></li>
+            <li><a href="developer.html">👨🏾‍💻 Developer</a></li>
+
         </ul>
      </nav>
         <label class="toggle-switch">
@@ -28,8 +38,54 @@
     </header>
 
     <main>
-        <section id="strategy-list"></section>
-        <section id="analysis-tool"></section>
+        <section id="strategy-list">
+            <section id="dashboard" class="module-card">
+                <h2>📊 Titan Dashboard</h2>
+                <div class="dash-grid">
+                    <div class="dash-card"><h3>🧠 Strategies Deployed</h3><p id="stat-strategies">0</p></div>
+                    <div class="dash-card"><h3>📦 Templates Downloaded</h3><p id="stat-downloads">0</p></div>
+                    <div class="dash-card"><h3>📝 Briefs Generated</h3><p id="stat-pdfs">0</p></div>
+                    <div class="dash-card"><h3>💼 Market Dominance</h3><p id="stat-dominance">12%</p></div>
+                </div>
+            </section>
+
+        </section>
+        <section id="analysis-tool">
+            <h2>🧪 Strategy Recommender</h2>
+            <div id="recommender">
+                <label>Is your market fragmented?</label>
+                <select id="q1">
+                    <option>--</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label>Do you control your supply chain?</label>
+                <select id="q2">
+                    <option>--</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label>Do you have capital to scale aggressively?</label>
+                <select id="q3">
+                    <option>--</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button id="get-strategy">Get My Strategy</button>
+                <div id="strategy-result"></div>
+            </div>
+            
+            <section id="wikidata-search" class="module-card">
+                <h2>🌍 Titan Knowledge Pulse</h2>
+                <input type="text" id="wikidata-query" placeholder="Search Wikidata (e.g. Rockefeller, Tesla, Monopoly)" />
+                <button id="wikidata-btn">Search</button>
+                <div id="wikidata-result"></div>
+            </section>
+
+        </section>
         <section id="discussion-hub" class="module-card">
             <h2>🧠 Discussion Hub</h2>
             <div id="comment-list"></div>
@@ -60,7 +116,9 @@
        <p>“The way to make money is to buy when blood is running in the streets.”</p>
        <span>— John D. Rockefeller</span>
        <hr />
-       <p class="footer-credit">Built with strategy and resilience by Enoch A. Kalule © Titan Tactics 2025</p>
+       <p class="footer-credit">Built with strategy and resilience by Enoch A. Kalule © Titan Tactics 2025.<a href="kalule/index.htm">Developer Bio</a></p>
+</p>
+
     </footer>
 
     <script type="module" src="scripts/app.mjs"></script>
