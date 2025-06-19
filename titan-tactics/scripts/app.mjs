@@ -158,3 +158,31 @@ document.getElementById("wikidata-btn").addEventListener("click", () => {
       console.error(err);
     });
 });
+document.getElementById("ask-titan").addEventListener("click", () => {
+  const question = document.getElementById("titan-question").value;
+  const responseBox = document.getElementById("titan-response");
+  
+  if (!question.trim()) {
+    responseBox.innerText = "Please enter a question first.";
+    return;
+  }
+
+  responseBox.innerText = "Thinking like Rockefeller...";
+
+  fetch("https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ inputs: { text: question } })
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      const answer = data.generated_text || "Titan Assistant is pondering that...";
+      responseBox.innerText = answer;
+    })
+    .catch((err) => {
+      console.error(err);
+      responseBox.innerText = "Oops! Something went wrong.";
+    });
+});

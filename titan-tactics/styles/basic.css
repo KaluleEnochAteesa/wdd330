@@ -716,3 +716,35 @@ input:checked + .slider:before {
   height: auto;
   margin-bottom: 15px;
 }
+#titan-chat {
+  margin-top: 30px;
+}
+
+#titan-chat input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Merriweather', serif;
+}
+
+#ask-titan {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #D4AF37;
+  color: #0A1F44;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#titan-response {
+  background-color: #0A1F44;
+  color: white;
+  padding: 15px;
+  border-left: 5px solid #D4AF37;
+  border-radius: 6px;
+  margin-top: 15px;
+}
