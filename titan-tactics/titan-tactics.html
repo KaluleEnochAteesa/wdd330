@@ -38,19 +38,13 @@
     </header>
 
     <main>
-        <section id="strategy-list">
-            <section id="dashboard" class="module-card">
-                <h2>📊 Titan Dashboard</h2>
-                <div class="dash-grid">
-                    <div class="dash-card"><h3>🧠 Strategies Deployed</h3><p id="stat-strategies">0</p></div>
-                    <div class="dash-card"><h3>📦 Templates Downloaded</h3><p id="stat-downloads">0</p></div>
-                    <div class="dash-card"><h3>📝 Briefs Generated</h3><p id="stat-pdfs">0</p></div>
-                    <div class="dash-card"><h3>💼 Market Dominance</h3><p id="stat-dominance">12%</p></div>
-                </div>
-            </section>
+        <section id="strategy-list"></section>
+        <section id="analysis-tool"></section>
+        <section id="discussion-hub" class="module-card"></section>
 
-        </section>
-        <section id="analysis-tool">
+        <section id="downloads"></section>
+        
+        <section id="analysis-tool" class="module-card">
             <h2>🧪 Strategy Recommender</h2>
             <div id="recommender">
                 <label>Is your market fragmented?</label>
@@ -77,39 +71,51 @@
                 <button id="get-strategy">Get My Strategy</button>
                 <div id="strategy-result"></div>
             </div>
-            
-            <section id="wikidata-search" class="module-card">
-                <h2>🌍 Titan Knowledge Pulse</h2>
-                <input type="text" id="wikidata-query" placeholder="Search Wikidata (e.g. Rockefeller, Tesla, Monopoly)" />
-                <button id="wikidata-btn">Search</button>
-                <div id="wikidata-result"></div>
-            </section>
-
-        </section>
-        <section id="discussion-hub" class="module-card">
-            <h2>🧠 Discussion Hub</h2>
-            <div id="comment-list"></div>
-            <form id="comment-form">
-                <input type="text" id="comment-input" placeholder="Drop a strategy insight..." required />
-                <button type="submit">Post</button>
-            </form>
         </section>
 
-        <section id="downloads">
-            <div id="download-tools">
+<section id="downloads" class="module-card">
+  <h2>📦 Strategy Templates</h2>
+    <div id="download-tools">
               <h3>📦 Downloadable Strategy Templates</h3>
                 <ul>
                     <li><a href="templates/fragmentation-analysis.pdf" target="_blank">Fragmentation Analysis Worksheet</a></li>
                     <li><a href="templates/acquisition-scouting.pdf" target="_blank">Acquisition Scouting Checklist</a></li>
                     <li><a href="templates/vertical-integration-plan.pdf" target="_blank">Vertical Integration Planner</a></li>
                 </ul>
-           </div>
-           <div id="custom-pdf">
+    </div>
+    <div id="custom-pdf">
               <h3>📝 Generate My Strategy Brief</h3>
               <textarea id="pdf-notes" placeholder="Summarize your Rockefeller strategy here..."></textarea>
               <button id="generate-pdf">Download PDF</button>
-            </div>
-        </section>
+    </div>
+</section>
+
+<section id="discussion-hub" class="module-card">
+  <h2>🧠 Discussion Hub</h2>
+  <div id="comment-list"></div>
+  <form id="comment-form">
+    <input type="text" id="comment-input" placeholder="Drop a strategy insight…" required />
+    <button type="submit">Post</button>
+  </form>
+</section>
+
+<section id="dashboard" class="module-card">
+  <h2>📊 Titan Dashboard</h2>
+  <div class="dash-grid">
+    <div class="dash-card"><h3>🧠 Strategies Deployed</h3><p id="stat-strategies">0</p></div>
+    <div class="dash-card"><h3>📦 Templates Downloaded</h3><p id="stat-downloads">0</p></div>
+    <div class="dash-card"><h3>📝 Briefs Generated</h3><p id="stat-pdfs">0</p></div>
+    <div class="dash-card"><h3>💼 Market Dominance</h3><p id="stat-dominance">12%</p></div>
+  </div>
+</section>
+
+<section id="wikidata-search" class="module-card">
+  <h2>🌍 Titan Knowledge Pulse</h2>
+  <input type="text" id="wikidata-query" placeholder="Search Wikidata (e.g. Rockefeller, Tesla, Monopoly)" />
+  <button id="wikidata-btn">Search</button>
+  <div id="wikidata-result"></div>
+</section>
+
     </main>
 
     <footer class="titan-footer">
@@ -117,7 +123,7 @@
        <span>— John D. Rockefeller</span>
        <hr />
        <p class="footer-credit">Built with strategy and resilience by Enoch A. Kalule © Titan Tactics 2025.<a href="kalule/index.htm">Developer Bio</a></p>
-</p>
+        </p>
 
     </footer>
 
